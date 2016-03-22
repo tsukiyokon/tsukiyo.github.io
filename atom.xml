@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-03-22T17:28:25.178Z</updated>
+  <updated>2016-03-22T18:04:16.846Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,14 +16,13 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
+    <title>试一下用hexo写文</title>
     <link href="http://yoursite.com/2016/03/22/test/"/>
     <id>http://yoursite.com/2016/03/22/test/</id>
     <published>2016-03-22T17:28:25.149Z</published>
-    <updated>2016-03-22T17:28:25.178Z</updated>
+    <updated>2016-03-22T18:04:16.846Z</updated>
     
-    <content type="html">&lt;hr&gt;
-&lt;h2 id=&quot;试一下用hexo写文&quot;&gt;&lt;a href=&quot;#试一下用hexo写文&quot; class=&quot;headerlink&quot; title=&quot;试一下用hexo写文&quot;&gt;&lt;/a&gt;试一下用hexo写文&lt;/h2&gt;&lt;p&gt;#这里是一级标题&lt;/p&gt;
+    <content type="html">&lt;p&gt;#这里是一级标题&lt;/p&gt;
 &lt;p&gt;###这里是三级标题&lt;/p&gt;
 &lt;p&gt;######这里是六级标题，就到这里了，木有七级！&lt;/p&gt;
 &lt;p&gt;段落前面没有缩进，看到了吧。&lt;/p&gt;
@@ -73,10 +72,12 @@
     
     <summary type="html">
     
-      &lt;hr&gt;
-&lt;h2 id=&quot;试一下用hexo写文&quot;&gt;&lt;a href=&quot;#试一下用hexo写文&quot; class=&quot;headerlink&quot; title=&quot;试一下用hexo写文&quot;&gt;&lt;/a&gt;试一下用hexo写文&lt;/h2&gt;&lt;p&gt;#这里是一级标题&lt;/p&gt;
+      &lt;p&gt;#这里是一级标题&lt;/p&gt;
 &lt;p&gt;###这里是三级标题&lt;/p&gt;
-&lt;p
+&lt;p&gt;######这里是六级标题，就到这里了，木有七级！&lt;/p&gt;
+&lt;p&gt;段落前面没有缩进，看到了吧。&lt;/p&gt;
+&lt;p&gt;　　要想使用缩进，在中文输入法中改成「全角」输入，再按两个空格&lt;/p&gt;
+&lt;p&gt;行尾一个回车换行，
     
     </summary>
     
