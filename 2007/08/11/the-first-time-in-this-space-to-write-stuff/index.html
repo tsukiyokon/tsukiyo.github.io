@@ -60,7 +60,7 @@ var y = 0
 function rota(){
   if(x){
     x=Math.sin(rad*3.14/180)*200+300
-    y=Math.cos(rad*3.14/180)*200+300
+    y=Math.cos(rad*3.14/180)*200+200
     document.getElementById('disp').innerHTML = Math.sin(x)
   $('#ball').animate({left:x +'px', top:y +'px'},0,'linear')
   rad+=1
