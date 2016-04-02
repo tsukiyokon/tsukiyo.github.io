@@ -7,6 +7,82 @@
 
 <html class="theme-next pisces use-motion">
 <head>
+<style>
+#ball {
+position :relative;
+}
+#box {
+width :600px;
+height :600px;
+background:black;
+border :1px solid #444;
+}
+#ball{
+  background: #50A1FF;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  position: absolute;
+}
+#sun {
+  height: 100px;
+  width: 100px;
+  top: 260px;
+  left: 320px;
+  position: absolute;
+}
+#moon {
+    background: #FFFFFF;
+  width: 3px;
+  height: 3px;
+  border-radius: 1.5px;
+  position: absolute;
+}
+</style>
+<script>
+var angle = 0
+setInterval(rota,10)
+ setInterval(function(){
+    angle+=14;
+  $("img").rotate(angle);
+  },10)
+// function bounce()
+// {
+// $('#ball')
+// .animate( { left:'270px', top :'380px' }, 'slow', 'linear')
+// .animate( { left:'540px', top :'190px' }, 'slow', 'linear')
+// .animate( { left:'270px', top :'0px' }, 'slow', 'linear')
+// .animate( { left:'0px', top :'190px' }, 'slow', 'linear')
+// }
+var x = 1
+var rad = 1
+var y = 0
+function rota(){
+  if(x){
+    x=Math.sin(rad*3.14/180)*200+300
+    y=Math.cos(rad*3.14/180)*200+300
+    document.getElementById('disp').innerHTML = Math.sin(x)
+  $('#ball').animate({left:x +'px', top:y +'px'},0,'linear')
+  rad+=1
+}
+  
+}
+setInterval(nrota,0.8264)
+var nx=1
+var nrad=1
+var ny = 0
+function nrota(){
+  if(nx){
+    nx=Math.sin(nrad*3.14/180)*20+10
+    ny=Math.cos(nrad*3.14/180)*20+10
+
+  $('#moon').animate({left:nx +'px', top:ny +'px'},0,'linear')
+  nrad+=1
+}
+  
+}
+
+</script>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
@@ -295,7 +371,16 @@
       </header>
     
 
+<div id='box'>
+<div id="ball">
+<div id='moon'></div>
+  
+</div>
 
+
+</div>
+<img id='sun' src='images/sun.png'>
+<div id='disp'></div>
     <div class="post-body" itemprop="articleBody">
 
       
